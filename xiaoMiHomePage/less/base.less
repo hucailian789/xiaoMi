@@ -1,0 +1,57 @@
+/* 为了方便写通配符 */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* 让盒模型的计算方式 包含边框和padding  避免设置宽度100% 边框和padding增加盒子的宽度造成出滚动条*/       
+}
+body{
+	font-family: '微软雅黑';
+	font-size: 12px/150%;
+	
+}
+ul{
+	list-style: none;
+
+}
+li{
+	display: block;
+}
+
+a{
+	text-decoration: none;
+	color:#666;
+	cursor: pointer;
+}
+
+img{
+	/* 去除图片距离div底部3px的间距 */
+	vertical-align: bottom;
+}
+input{
+	border:0;
+	outline: 0;
+}
+
+.clearfix::before,.clearfix::after{
+	content: "";
+	display: block;
+	clear:both;
+}
+
+.bl{
+	border-left: 1px solid #ccc;
+}
+.br{
+	border-right: 1px solid #ccc;
+}
+.bt{
+	border-top: 1px solid #ccc;
+}
+.bb{
+	border-bottom: 1px solid #ccc;
+}
+.container{
+    width: 1226px;
+    margin: 0 auto;
+}
